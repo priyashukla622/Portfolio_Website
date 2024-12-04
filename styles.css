@@ -82,25 +82,6 @@ span{
     font-size: 60px;
 
 }
-/* .home-content h1{
-    font-size: 82px;
-    animation:slideRight 1s ease forwards;
-    animation-delay: 1s;
-    opacity: 0;
-}
-@keyframes slideRight{
-    0%{
-        transform: translateX(-100);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-} */
-
-
 .home-content h1 {
     font-size: 82px;
     animation: slideRight 1s ease forwards;
