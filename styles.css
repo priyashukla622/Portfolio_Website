@@ -360,87 +360,107 @@ span{
         padding:2rem;
     }
 }
-/*@@@@@@@@@@@@@@@@@@ education  @@@@@@@@@@@@@@@@@@@@*/
-.education{
+.education {
     background: #101010;
-    width:100%;
-    padding:250px 0px;
+    width: 100%;
+    padding: 80px 20px;
 }
-.title .he{
-    color:white;
-    font-size:40px;
-    width:1130px;
-    margin-top: -200px; 
-    margin-left: 90px; 
-    text-align: center;  
-}
-.title .he{
-position: absolute;
-}  
-.he{
-    margin-top:100px;
-}
-.title h2 span{
-    color:#f9004d;
-}
-.education-box{
-    display:flex;
-    justify-content:center;
-    min-height: 100px; 
-}
-.card{
-    height:350px;
-    width:600px;
-    padding: 20px 35px;
-    background: #191919;
-    border-radius: 20px;
-    margin:15px;
-    margin-top: -90px;
-    position: relative;
-    overflow: hidden;
+.title .he {
+    color: white;
+    font-size: 40px;
     text-align: center;
+    margin-bottom: 30px;
 }
-.card i{
-    font-size: 35px;
-    display:block;
-    text-align: center;
-    margin:30px 0px;
-    color:#f9004d;
-}
-.study{
-    color:white;
-    font-size: 23px;
-    margin-bottom:15px
-}
-.pra p{
-    color:#fcfe;
-    font-size:19px;
-    line-height:27px;
-    margin-bottom:25px;
-    margin-top:20px;
-}
-.card .info-btn{
-    background-color: #f9004d;
-    color:white;
-    text-decoration: none;
-    border:2px solid transparent;
-    font-weight: bold;
-    padding:8px 12px;
-    border-radius: 30px;
-    transition: .4s;
-}
-.info-btn{
-    position: absolute;
-    bottom:40px;
-    right: 150px;   
-    font-size: 12px;
+.education-box {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
 }
 
-.card .info-btn:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
+/* Individual Card */
+.card {
+    background: #191919;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%; 
+    min-width: 250px; 
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Icons */
+.card i {
+    font-size: 35px;
+    color: #f9004d;
+    margin-bottom: 15px;
+}
+
+/* Card Titles */
+.study {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.pra p {
+    color: #fcfe;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Read More Button */
+.card .info-btn {
+    background-color: #f9004d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.card .info-btn:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .education-box {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; 
+    }
+    
+    .title .he {
+        font-size: 30px;
+    }
+}
+
 .project {
     background: var(--second-bg-color);
     background-color: #d0c3be;
@@ -885,11 +905,9 @@ tr td{
         text-align: center;
         padding: 10px 0;
     }
-
     .navbar.active {
         display: flex;
     }
-
     .navbar a {
         padding: 10px;
         display: block;
@@ -943,9 +961,9 @@ tr td{
         padding: 10px;
     }
 
-    .about-content .head h2 {
-        font-size: 22px;
-        margin-top: -900px;
+    .about-content h2{
+        font-size: 40px;
+        margin-left: 120px;
     }
 
     .about-content p {
@@ -959,6 +977,7 @@ tr td{
 }
 img {
     /* max-width: 100%; */
+    /* margin-top:70px; */
     height: auto;
     width: 100%;
 }
